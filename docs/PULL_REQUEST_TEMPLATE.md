@@ -1,9 +1,8 @@
 # Tipo de usuario
-- [ ] Alfa
-- [ ] Bravo 
-- [ ] Charlie
-- [ ] Delta
-- [ ] Echo
+- [ ] joseph
+- [ ] Yelitza
+- [ ] jose
+
 
 # Seleccione el tipo de actividad
 - [ ] Feature
