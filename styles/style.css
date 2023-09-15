@@ -1,36 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@200;300&display=swap');
+
+:root{
+
+  --color-uni:rgba(0,255,255,0.3);
+  --color-letter:rgba(0,255,255,1);
+  --color-circle: rgba(244, 122, 122, 0.7);
+  --parraf-letter:'Poppins', sans-serif;
+  --tittle-letter: "Dancing Script", sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   color: #333;
+  padding: 3vh 0 0 0;
+
+
 }
 
 header {
-  background-color: #eee;
-  height: 20vh;
+  width: 100%;
+  height: 17vh;
+  
 }
 
 h1 {
-  font-size: 36px;
-  font-weight: bold;
+  display: inline;
+  padding: 1rem;
+  width: 50%;
+  font-family:  var(--tittle-letter);
+  font-size: 4rem;
+  color: var(--color-uni);
 }
+h1>span{
 
+  color: var(--color-circle);
+
+
+}
 nav {
+  display: inline;
   float: right;
+  margin-top: 2.5rem;
+  margin-right: 0;
 }
 
 nav a {
   display: inline;
   padding: 10px;
   text-decoration: none;
-  background-color: aqua;
+  background-color: var(--color-uni);
   color: #333;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 2px 15px -6px rgba(0,0,0,0.63); 
+  box-shadow: 5px 2px 15px -6px rgba(0,0,0,0.63);
+  transition: all .5s ease-in-out;
 }
 
 nav a:hover {
   background-color: #ccc;
+  color: white;
 }
 
 main {
+  width: 100%;
   height: 70vh;
 }
 
@@ -48,7 +87,99 @@ p {
 }
 
 footer {
-  background-color: #eee;
   height: 10vh;
+  background-color: #eee;
   text-align: center;
+}
+
+footer>p {
+  padding: 1rem;
+
+}
+
+
+main>h2{
+  font-family: var(--parraf-letter);
+  text-align: center;
+  text-decoration: underline;
+}
+main>h2>span{
+  font-family: var(--tittle-letter);
+  font-size: 3rem;
+}
+.container{
+  position: relative;
+  width: 100%;
+
+}
+.deep {
+  position: fixed;
+  left: 10%;
+  bottom: 0;
+  width: 30%;
+  height: 50%;
+  background-color: var(--color-uni);
+  filter: blur(3rem);
+  border-radius: 112px 200px 90px 107px;
+  -webkit-border-radius: 112px 200px 90px 107px;
+  -moz-border-radius: 112px 200px 90px 107px;
+  border: 12px inset #8ad6e9;
+
+} 
+
+.deep1{
+  position: fixed;
+  top: 25%;
+  right: 5%;
+  width: 30%;
+  height: 50%;
+  background-color: var(--color-circle);
+  filter: blur(5rem);
+  border-radius: 50%;
+  border: 12px inset #e77a4f;  
+}
+
+
+.img-factory{
+  
+  position: absolute;
+  top: 5%;
+  z-index: 10;
+  
+}
+
+
+
+.gen{
+
+  width: 30%;
+  height: 40%;
+}
+
+.pos-l{
+  float: left;
+}
+.pos-r{
+  float: right;
+}
+.img-factory > .parraf{
+
+  font-size: 1.5rem;
+  font-family: var(--parraf-letter);
+  padding: 1rem;
+  text-align: justify;
+  line-height: 2.5rem;
+  
+
+}
+
+.img-factory > .parraf>span{
+  font-family: var(--tittle-letter);
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+.f-nos{
+  margin-top: calc(30% - 10vh);
 }
