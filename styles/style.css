@@ -5,7 +5,6 @@
 
   --color-uni:rgba(0,255,255,0.3);
   --color-letter:rgba(0,255,255,1);
-  /* --color-circle: rgba */
   --color-circle: rgba(244, 122, 122, 0.7);
   --parraf-letter:'Poppins', sans-serif;
   --tittle-letter: "Dancing Script", sans-serif;
@@ -19,7 +18,6 @@
 body {
 
   font-family: Arial, sans-serif;
-  /* line-height: 1.6; */
   color: #333;
   padding: 3vh 0 0 0;
 
@@ -27,23 +25,18 @@ body {
 }
 
 header {
-  /* background-color: #eee; */
-  /* position: absolute; */
   width: 100%;
   height: 17vh;
   
 }
 
 h1 {
-  /* float: left; */
   display: inline;
   padding: 1rem;
-  /* margin: 0; */
   width: 50%;
   font-family:  var(--tittle-letter);
   font-size: 4rem;
   color: var(--color-uni);
-  /* font-weight: bold; */
 }
 h1>span{
 
@@ -56,7 +49,6 @@ nav {
   float: right;
   margin-top: 2.5rem;
   margin-right: 0;
-  /* height: 100%; */
 }
 
 nav a {
@@ -77,8 +69,6 @@ nav a:hover {
 }
 
 main {
-  /* position: absolute; */
-
   width: 100%;
   height: 70vh;
 }
@@ -98,9 +88,6 @@ p {
 
 footer {
   height: 10vh;
-  /* margin-bottom: -100%; */
-  /* margin-top: calc(100vh - 50vh); */
-  /* height: 10%; */
   background-color: #eee;
   text-align: center;
 }
@@ -109,13 +96,9 @@ footer>p {
   padding: 1rem;
 
 }
-/* Styles nosotros */
 
 
 main>h2{
-  /* position: absolute;
-  top: 5rem;
-  left: 30%; */
   font-family: var(--parraf-letter);
   text-align: center;
   text-decoration: underline;
@@ -126,7 +109,6 @@ main>h2>span{
 }
 .container{
   position: relative;
-  /* height: 100%; */
   width: 100%;
 
 }
@@ -142,11 +124,6 @@ main>h2>span{
   -webkit-border-radius: 112px 200px 90px 107px;
   -moz-border-radius: 112px 200px 90px 107px;
   border: 12px inset #8ad6e9;
-  /* z-index: 1; */
-  /* box-shadow: 10px 10px 62px 0px rgba(0,0,0,0.75);
- -webkit-box-shadow: 10px 10px 62px 0px rgba(0,0,0,0.75);
- -moz-box-shadow: 10px 10px 62px 0px rgba(0,0,0,0.75);
- transition: all 5s ease; */
 
 } 
 
@@ -154,34 +131,18 @@ main>h2>span{
   position: fixed;
   top: 25%;
   right: 5%;
-  /* background-color: black; */
   width: 30%;
   height: 50%;
   background-color: var(--color-circle);
   filter: blur(5rem);
   border-radius: 50%;
-  border: 12px inset #e77a4f;
-  /* z-index: 1; */
-  /* border-radius: 112px 200px 90px 107px;
-  -webkit-border-radius: 112px 200px 90px 107px;
-  -moz-border-radius: 112px 200px 90px 107px;
-  border: 12px inset #8ad6e9;
-  z-index: 10; */
-  /* box-shadow: 10px 10px 62px 0px rgba(0,0,0,0.75);
- -webkit-box-shadow: 10px 10px 62px 0px rgba(0,0,0,0.75);
- -moz-box-shadow: 10px 10px 62px 0px rgba(0,0,0,0.75); */
-  
+  border: 12px inset #e77a4f;  
 }
 
 
 .img-factory{
   
   position: absolute;
-  /* top: 5%;
-  right: 5%; */
-  /* background-color: transparent; */
-  /* width: 40%; */
-  /* left: 10%; */
   top: 5%;
   z-index: 10;
   
@@ -210,16 +171,13 @@ main>h2>span{
   line-height: 2.5rem;
   
 
-  /* width: 50%; */
-  /* height: 80%; */
 }
 
 .img-factory > .parraf>span{
   font-family: var(--tittle-letter);
-
   font-size: 2rem;
   font-weight: bold;
-  /* font-family: var(--parraf-letter); */
+
 }
 
 .f-nos{
