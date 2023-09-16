@@ -1,17 +1,30 @@
-body {
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+      /*line-height: 1.68*/
     color: #333;
+    --color-uni: rgb(0,255,255);
+    --color-circle: rgb(245, 95, 14);
   }
   
   header {
     background-color: #eee;
-    padding: 20px;
+    height: 10vh;
   }
   
   h1 {
     font-size: 36px;
     font-weight: bold;
+    padding: 20px;
+    width: 70%;
+    clear: right;
   }
   
   nav {
@@ -31,11 +44,12 @@ body {
   }
   
   main {
-    padding: 20px;
+    /*padding: 20px;*/
+    height: 70vh;
   }
   
   section {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
   }
   
   h2 {
@@ -48,7 +62,83 @@ body {
   }
   
   footer {
+    height: 20vh;
     background-color: #eee;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
+  }
+
+  /* Styles nosotros */
+  .container{
+    position: relative;
+    /* top: 0; */
+    /* left: 0; */
+    height: 100%;
+    width: 100%;
+
+  }
+  .deep {
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    width: 30%;
+    height: 70%;
+    background-color: var(--color-uni);
+    filter: blur(7rem);
+    border-radius: 112px 200px 90px 107px;
+    -webkit-border-radius: 112px 200px 90px 107px;
+    -moz-border-radius: 112px 200px 90px 107px;
+    border: 12px inset #8ad6e9;
+    box-shadow: 10px 10px 62px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 10px 10px 62px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 10px 10px 62px 0px rgba(0,0,0,0.75);
+   transition: all 5s ease;
+
+  } 
+
+  .deep1{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    /* background-color: black; */
+    width: 20%;
+    height: 20%;
+    background-color: var(--color-circle);
+    filter: blur(5rem);
+    border-radius: 112px 200px 90px 107px;
+    -webkit-border-radius: 112px 200px 90px 107px;
+    -moz-border-radius: 112px 200px 90px 107px;
+    border: 12px inset #8ad6e9;
+    /* box-shadow: 10px 10px 62px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 10px 10px 62px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 10px 10px 62px 0px rgba(0,0,0,0.75); */
+    
+  }
+  .deep:hover{
+    left:20%;
+    cursor: pointer;
+  }
+
+  .img-factory{
+    
+    position: absolute;
+    /* width: 40%; */
+    left: 10%;
+    top: 10%;
+    
+  }
+
+  .parraf > img{
+    float: left;
+  ;
+    width: 20%;
+    height: 10%;
+  }
+
+  .img-factory > .parraf{
+    font-size: 30px;
+    padding: 20px
+    /* width: 50%; */
+    /* height: 80%; */
+
   }
