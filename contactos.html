@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos</title>
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/practicaJueves/styles/reset.css">
+    <link rel="stylesheet" href="/practicaJueves/styles/style.css">
 
 </head>
 
@@ -21,36 +21,43 @@
       </header>
 
     <main>
-      <h2>Quieres saber mas acerca de nosotros</h2>
-      <h2>¡Contactanos!</h2>
-        
-      <form>
+
+      <div class="contenedor-contacto">
+
+        <h2>Quieres saber mas acerca de nosotros</h2>
+        <h2>¡Contactanos!</h2>
           
-        <legend>Información Personal</legend>
+        <form>
+            
+          <legend>Información Personal</legend>
+  
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" placeholder="Tu nombre">
+  
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" placeholder="Tu email" required>
+  
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
+          <label for="mensaje">Caja de comentarios</label>
+          <textarea id="mensaje"></textarea>
+  
+          <label for="plataforma">¿como nos conociste?</label>
+          <select id="plataforma"> 
+            <option value="" disabled selected>-- Seleccione --</option>
+            <option value="fc">Facebook</option>
+            <option value="x">X</option>
+            <option value="insta">Instagram</option>
+            <option value="tik">Tiktok</option>
+            <option value="tl">Telegram</option>
+          </select>
+  
+          <input type="submit" id="submit" placeholder="Enviar" class="btn-azul">
+  
+        </form>
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" placeholder="Tu nombre">
-
-        <label for="mail">E-mail:</label>
-        <input type="email" id="mail" placeholder="Tu email" required>
-
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
-        <label for="mensaje">Caja de comentarios</label>
-        <textarea id="mensaje"></textarea>
-
-        <label for="plataforma">¿como nos conociste?</label>
-        <select id="plataforma"> 
-          <option value="fc">Facebook</option>
-          <option value="x">X</option>
-          <option value="insta">Instagram</option>
-          <option value="tik">Tiktok</option>
-          <option value="tl">Telegram</option>
-        </select>
-
-        <input type="submit" id="submit" placeholder="Enviar">
-
-      </form>
+      </div>
+     
 
     </main>
       

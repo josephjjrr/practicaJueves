@@ -13,9 +13,7 @@ h1 {
   font-size: 36px;
   font-weight: bold;
 }
-h2 {
-  text-align: center;
-}
+
 
 nav {
   float: right;
@@ -35,6 +33,26 @@ nav a:hover {
 
 main {
   height: 70vh;
+}
+
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Contacto */
+
+.contenedor-contacto h2 {
+  text-align: center;
 }
 
 form {
@@ -66,18 +84,23 @@ select {
   border-radius: 1rem;
 }
 
-section {
-  margin-bottom: 20px;
+.btn-azul {
+  font-size: 1rem;
+  text-decoration: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  background-color: aqua;
+  color: #333;
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: bold;
+.btn-azul:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  transition: 0.5s;
 }
 
-p {
-  font-size: 16px;
-}
+
+/*footer*/
 
 footer {
   background-color: #eee;
@@ -85,3 +108,4 @@ footer {
   padding: 3rem 0;
   text-align: center;
 }
+
